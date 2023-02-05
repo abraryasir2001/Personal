@@ -1,0 +1,555 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* header design start */
+header{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    position:fixed;
+    background-color: white;
+    top:0;
+    z-index: 99999;     /* help me to get rid of over laping between navigation bar and other contents as well as effects also,specially hover effects*/
+}
+
+.logo{
+    margin-top:25px;
+    margin-left: 150px;
+}
+.navbar ul{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 150px;
+    display: flex;
+}
+.navbar ul li{
+    margin: 15px 15px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+.navbar ul li a:hover{
+    color: #7FB3FF;
+    transition: 0.5s;
+}
+.navbar ul li a:focus{
+    color: #7FB3FF;
+}
+.dropdown_menu{
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 100%;
+}
+.dropdown_menu ul{
+    display: block;
+    margin-top: 32px;
+    margin-left: -80px;
+    justify-content: left;
+    box-shadow: 1px 1px 8px rgb(180, 167, 167),
+    -1px -1px 8px rgb(180, 167, 167);
+    background-color: white;
+}
+.dropdown_menu ul li{
+    width: 150px;
+    margin-left: 25px;
+}
+.navbar ul li:hover > div {
+    display: block;
+}
+.navbar ul li i:hover {
+    transform: rotate(180deg);
+}
+
+/* header design end */
+
+/* part_one design start */
+.part_one{
+    width: 100%;
+    height: 750px;
+    background-color: #F9F9FF;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#writting_part,#img_part{
+    width: 50%;
+}
+#writting_part{
+    box-sizing: border-box;
+    margin-left: 100px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#img_part{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.PHILIP_GILBERT{
+    font-size: 50px;
+    margin-left: 15px;
+    color: #222222;
+    margin-top: 20px;
+}
+.THIS_IS_ME{
+    font-weight: 500;
+}
+.para{
+    color: #838180;
+    margin-left: 15px;
+}
+.discoverme{
+    padding: 15px 25px;
+    margin-left: 15px;
+    background-color: #70A9FD;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #70A9FD;
+}
+.discoverme:hover{
+    box-shadow: 5px 10px 30px #70A9FD;
+    transition-duration: 0.8s;
+}
+
+/* part_one design end */
+
+/* part_two design start */
+.part_two{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.part_two_img,.part_two_writting{
+    box-sizing: border-box;
+    width: 50%;
+}
+.part_two_img{
+   margin-top: 60px;
+   margin-left: 30px;
+}
+.part_two_writting{
+    margin-top: -45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ABOUT_ME{
+    font-weight: 500;
+}
+.PERSONAL_DETAILS{
+    font-size: 40px;
+    margin-left: 15px;
+    color: #222222;
+    margin-top: 20px;
+}
+.para2{
+    color: #838180;
+    margin-left: 15px;
+}
+.viewfulldetails{
+    padding: 15px 25px;
+    margin-left: 15px;
+    background-color: #70A9FD;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #70A9FD;
+}
+.viewfulldetails:hover{
+    box-shadow: 5px 10px 30px #70A9FD;
+    transition-duration: 0.8s;
+}
+
+/* part_two design end */
+
+/* part_three design start */
+.services{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 90%;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 0.5fr repeat(2,0.5fr);
+    grid-template-columns: repeat(3,1.5fr);
+    grid-gap:8px;
+    margin-left: 80px;
+}
+#s1,#s2,#s3,#s4,#s5,#s6,#s7{
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+#s1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+#s2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#s3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#s4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#s5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#s6{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#s7{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.logosize{
+    font-size: 30px;
+}
+.My_offered_services_texts{
+    color: #838180;
+}
+.My_Offered_Services{
+    font-size: 45px;
+    color: #222222;
+}
+.logoshead{
+    font-weight: 600;
+}
+.hover_effect:hover{
+   color: #7FB3FF;
+   transition-duration:0.6s;
+}
+.logoshead:hover{
+    cursor: pointer;
+}
+
+/* part_three design end */
+
+
+/* part_four design start */
+
+.counting_area{
+    width: 100%;
+    height: 300px;
+    background-color: #8194FF;
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    text-align: center;
+    margin-top: 70px;
+}
+.numbers{
+    font-size: 35px;
+}
+.cnt_txt{
+    margin-top: -20px;
+    font-weight: 500;
+}
+.counting_area:hover{
+    box-shadow: 5px 5px 35px #70A9FD;
+    transition: 0.5s;
+}
+.counting_area:hover > .container .numbers{
+    color: black;
+    font-size: 50px;
+    transition: 0.8s;
+}
+.counting_area:hover > .container .cnt_txt{
+    margin-top: -35px;
+}
+/* part_four design end */
+
+
+/* part_five design start */
+
+.six_pic{
+    box-sizing: border-box;
+   /* border: 1px solid black; */
+   width: 90%;
+   height: 1100px;
+   margin-top: 5px;
+   margin-left: 60px;
+   display: grid;
+   grid-template-rows: 200px repeat(2,540px);
+   grid-template-columns:repeat(3,1fr) ;
+   text-align: center;
+   align-items: center;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.pictures_container{
+    padding: 0px 5px; 
+}
+
+.pic_txt{
+    grid-row: 1/2;
+    grid-column: 1/4;
+
+}
+.container_one{
+    grid-row:2/3;
+    grid-column: 1/2;
+}
+.container_two{
+    grid-row:2/3;
+    grid-column: 2/3;
+}
+.container_three{
+    grid-row:2/3;
+    grid-column: 3/4;
+}
+.container_four{
+    grid-row:3/4;
+    grid-column: 1/2;
+    margin-top: -250px;
+}
+.container_five{
+    grid-row:3/4;
+    grid-column: 2/3;
+    margin-top: -250px;
+}
+.container_six{
+    grid-row:3/4;
+    grid-column: 3/4;
+    margin-top: -250px;
+}
+.Our_Latest_Featured_Projects{
+    font-size: 45px;
+    color: #222222;
+}
+.Our_Latest_Featured_Projects_paragraph{
+    color: #838180;
+    margin-top: -20px;
+}
+.pictures_heading{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.pictures_paragraph{
+    color: #838180;
+    margin-top: -15px;
+}
+/* .pictures{
+    background: #70A9FD;
+    overflow: hidden;
+} */
+.overlay{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    height: 342px;
+    width: 343px;
+    /* position: absolute; */
+    margin-top: -345px;
+    margin-left: 23px;
+    border-radius:6px;
+    /* background-color: aqua; */
+}
+.pictures .fa-binoculars{
+    visibility: hidden;
+}
+.fa-binoculars{
+    margin-top: 150px;
+    font-size: 50px;
+}
+.pictures:hover > .overlay{
+    background-color: #70A9FD;
+    opacity: 0.7;
+    transition: 0.8s;
+}
+.pictures:hover > .overlay .fa-binoculars{
+    visibility: visible;
+    color: white;
+}
+/* part_five design end */
+
+/* part_six design start */
+
+.choose_your_plan{
+    /* box-sizing: border-box; */
+    width: 90%;
+    margin-left: 50px;
+    height: 700px;
+    /* border: 1px solid black; */
+    text-align: center;
+    display: grid;
+    grid-template-rows: 200px 500px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.plan_text{
+    grid-row: 1/2;
+    grid-column: 1/5;
+    /* border: 1px solid black; */
+}
+/* .plans{
+    border: 1px solid black;
+} */
+.p_one{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.p_two{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.p_three{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.p_four{
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+hr{
+    width: 85%;
+    height: 1px;
+    border: none;
+    background-color:#f2f2ff;
+}
+
+.Choose_Your_Plan_heading{
+    font-size: 45px;
+    color: #222222;
+}
+.Choose_Your_Plan_text{
+    color: #838180;
+    margin-top: -15px;
+}
+.p_number{
+    font-size: 50px;
+}
+.p_number_heading{
+    margin-top: -45px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.p_number_txts{
+    color: #838180;
+}
+.dollers{
+    font-size: 45px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.buy_now_btn{
+    padding:15px 65px;
+    position: absolute;
+    margin-top: -85px;
+    margin-left: -100px;
+    visibility: hidden;
+    border: none;
+    font-weight: 600;
+    animation-name: buy_now_effect;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.plans:hover{
+    background-color: #70A9FD;
+    color: white;
+    transition: 0.8s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.plans:hover > .p_number_txts{
+    color: white;
+} 
+.plans:hover > .buy_now_btn{
+    visibility:visible;
+} 
+.buy_now_btn:focus{
+    background-color: green;
+    color: white;
+    animation-iteration-count: 0;
+}
+
+/* part_six design end */
+
+
+/* footer design start */
+footer{
+   box-sizing: border-box;
+   width: 100%;
+   height: 400px;
+   margin-top: 25px;
+   display: flex;
+   text-align: left;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   background-color: #04091E;
+ }
+ .footer_about_me, .newsletter{
+    width: 450px;
+    margin: 70px 5px 70px 30px;
+    padding:5px  25px;
+ }
+ .follow_me{
+    width: 350px;
+    margin: 70px 10px 70px 30px;
+    padding: 5px;
+ }
+ #mail{
+    margin-top: 40px;
+ }
+ .email
+ {
+    font-size: 15px;
+    position: relative;
+    padding: 7px 35px;
+    border: 1px solid white;
+ }
+ .arrow{
+    font-size: 24px;
+    position: absolute;
+    border: 1px solid white;
+    background-color: #8490FF;
+    color: white;
+ }
+ .footer_heading{
+    color: white;
+ }
+ .footer_paragraph{
+    color: #838180;
+ }
+ span{
+    color: #70A9FD;
+    font-weight: 700;
+ }
+ #social{
+    padding-left: 20px;
+ }
+ #social i{
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+ }
+ .social_paragraph
+ {
+    font-size: 20px;
+    margin-left: 15px;
+ }
+ #followme{
+    margin-left: 15px;
+ }
+/* footer design end */
+
+
+

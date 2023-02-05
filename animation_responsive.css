@@ -1,0 +1,15 @@
+@keyframes buy_now_effect{
+    0%{
+        background-color: white;
+        color: black;
+    }
+    50%{
+        background-color: red;
+        color: white;
+    }
+    100%{
+        background-color: white;
+        color: black;
+    }
+}
+
