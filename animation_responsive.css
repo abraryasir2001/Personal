@@ -12,7 +12,7 @@
         color: black;
     }
 }
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px) and (max-width:1000px)
 {
 
     /* header start */
@@ -177,17 +177,12 @@
         font-size: 35px;
         margin-top: 80px;
     }
-    .overlay{
-        box-sizing: border-box;
-        /* border: 1px solid black; */
-        height: 342px;
-        width: 343px;
-        /* position: absolute; */
-        margin-top: -345px;
-        margin-left: 11px;
-        border-radius:6px;
-        /* background-color: aqua; */
-    }
+        .pictures:hover > .overlay{
+           display: none;
+        }
+        .pictures:hover > .overlay .fa-binoculars{
+            visibility: hidden;
+        }
    
     /* part five end */
 
